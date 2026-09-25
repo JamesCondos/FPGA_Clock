@@ -1,0 +1,1 @@
+Designed and implemented a physical digital clock on FPGA hardware using Verilog. Developed the digital logic required for timekeeping and integrated the design into a working hardware implementation, strengthening my experience with RTL design, FPGA development and digital systems.
