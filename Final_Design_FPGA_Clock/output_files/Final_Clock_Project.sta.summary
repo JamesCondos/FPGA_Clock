@@ -1,0 +1,293 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1100mV 85C Model Setup 'Clock:clock_v1|Time:time_v1|Counter:count_minutes|cnt[1]'
+Slack : -17.298
+TNS   : -195.409
+
+Type  : Slow 1100mV 85C Model Setup 'Clock:clock_v1|Time:time_v1|Counter:count_hours|cnt[1]'
+Slack : -14.768
+TNS   : -179.503
+
+Type  : Slow 1100mV 85C Model Setup 'Clock:clock_v1|Time:time_v1|Counter:count_seconds|cnt[1]'
+Slack : -13.753
+TNS   : -183.393
+
+Type  : Slow 1100mV 85C Model Setup 'CLOCK_50'
+Slack : -6.430
+TNS   : -1055.775
+
+Type  : Slow 1100mV 85C Model Hold 'Clock:clock_v1|Time:time_v1|Counter:count_hours|cnt[1]'
+Slack : -4.015
+TNS   : -23.144
+
+Type  : Slow 1100mV 85C Model Hold 'Clock:clock_v1|Time:time_v1|Counter:count_seconds|cnt[1]'
+Slack : -3.827
+TNS   : -24.863
+
+Type  : Slow 1100mV 85C Model Hold 'Clock:clock_v1|Time:time_v1|Counter:count_minutes|cnt[1]'
+Slack : -3.712
+TNS   : -19.301
+
+Type  : Slow 1100mV 85C Model Hold 'CLOCK_50'
+Slack : -2.844
+TNS   : -20.685
+
+Type  : Slow 1100mV 85C Model Recovery 'Clock:clock_v1|Time:time_v1|Counter:count_minutes|cnt[1]'
+Slack : -8.338
+TNS   : -107.984
+
+Type  : Slow 1100mV 85C Model Recovery 'Clock:clock_v1|Time:time_v1|Counter:count_seconds|cnt[1]'
+Slack : -8.234
+TNS   : -108.239
+
+Type  : Slow 1100mV 85C Model Recovery 'Clock:clock_v1|Time:time_v1|Counter:count_hours|cnt[1]'
+Slack : -7.982
+TNS   : -107.788
+
+Type  : Slow 1100mV 85C Model Removal 'Clock:clock_v1|Time:time_v1|Counter:count_seconds|cnt[1]'
+Slack : 0.057
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Removal 'Clock:clock_v1|Time:time_v1|Counter:count_hours|cnt[1]'
+Slack : 0.126
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Removal 'Clock:clock_v1|Time:time_v1|Counter:count_minutes|cnt[1]'
+Slack : 0.173
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'Clock:clock_v1|Time:time_v1|Counter:count_minutes|cnt[1]'
+Slack : -2.813
+TNS   : -155.549
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'Clock:clock_v1|Time:time_v1|Counter:count_seconds|cnt[1]'
+Slack : -2.588
+TNS   : -128.015
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'Clock:clock_v1|Time:time_v1|Counter:count_hours|cnt[1]'
+Slack : -2.236
+TNS   : -117.686
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'CLOCK_50'
+Slack : -0.394
+TNS   : -190.240
+
+Type  : Slow 1100mV 0C Model Setup 'Clock:clock_v1|Time:time_v1|Counter:count_minutes|cnt[1]'
+Slack : -17.239
+TNS   : -197.185
+
+Type  : Slow 1100mV 0C Model Setup 'Clock:clock_v1|Time:time_v1|Counter:count_hours|cnt[1]'
+Slack : -14.856
+TNS   : -181.559
+
+Type  : Slow 1100mV 0C Model Setup 'Clock:clock_v1|Time:time_v1|Counter:count_seconds|cnt[1]'
+Slack : -13.971
+TNS   : -186.009
+
+Type  : Slow 1100mV 0C Model Setup 'CLOCK_50'
+Slack : -6.238
+TNS   : -1030.273
+
+Type  : Slow 1100mV 0C Model Hold 'Clock:clock_v1|Time:time_v1|Counter:count_hours|cnt[1]'
+Slack : -4.205
+TNS   : -24.512
+
+Type  : Slow 1100mV 0C Model Hold 'Clock:clock_v1|Time:time_v1|Counter:count_seconds|cnt[1]'
+Slack : -4.046
+TNS   : -26.722
+
+Type  : Slow 1100mV 0C Model Hold 'Clock:clock_v1|Time:time_v1|Counter:count_minutes|cnt[1]'
+Slack : -3.864
+TNS   : -20.893
+
+Type  : Slow 1100mV 0C Model Hold 'CLOCK_50'
+Slack : -2.900
+TNS   : -23.588
+
+Type  : Slow 1100mV 0C Model Recovery 'Clock:clock_v1|Time:time_v1|Counter:count_minutes|cnt[1]'
+Slack : -8.316
+TNS   : -107.276
+
+Type  : Slow 1100mV 0C Model Recovery 'Clock:clock_v1|Time:time_v1|Counter:count_seconds|cnt[1]'
+Slack : -8.187
+TNS   : -108.128
+
+Type  : Slow 1100mV 0C Model Recovery 'Clock:clock_v1|Time:time_v1|Counter:count_hours|cnt[1]'
+Slack : -7.983
+TNS   : -108.493
+
+Type  : Slow 1100mV 0C Model Removal 'Clock:clock_v1|Time:time_v1|Counter:count_seconds|cnt[1]'
+Slack : -0.283
+TNS   : -0.655
+
+Type  : Slow 1100mV 0C Model Removal 'Clock:clock_v1|Time:time_v1|Counter:count_hours|cnt[1]'
+Slack : -0.128
+TNS   : -0.128
+
+Type  : Slow 1100mV 0C Model Removal 'Clock:clock_v1|Time:time_v1|Counter:count_minutes|cnt[1]'
+Slack : -0.023
+TNS   : -0.023
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'Clock:clock_v1|Time:time_v1|Counter:count_minutes|cnt[1]'
+Slack : -2.938
+TNS   : -163.714
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'Clock:clock_v1|Time:time_v1|Counter:count_seconds|cnt[1]'
+Slack : -2.837
+TNS   : -142.875
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'Clock:clock_v1|Time:time_v1|Counter:count_hours|cnt[1]'
+Slack : -2.455
+TNS   : -131.114
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'CLOCK_50'
+Slack : -0.394
+TNS   : -206.677
+
+Type  : Fast 1100mV 85C Model Setup 'Clock:clock_v1|Time:time_v1|Counter:count_minutes|cnt[1]'
+Slack : -9.917
+TNS   : -108.996
+
+Type  : Fast 1100mV 85C Model Setup 'Clock:clock_v1|Time:time_v1|Counter:count_hours|cnt[1]'
+Slack : -8.200
+TNS   : -98.232
+
+Type  : Fast 1100mV 85C Model Setup 'Clock:clock_v1|Time:time_v1|Counter:count_seconds|cnt[1]'
+Slack : -7.755
+TNS   : -98.467
+
+Type  : Fast 1100mV 85C Model Setup 'CLOCK_50'
+Slack : -3.603
+TNS   : -496.845
+
+Type  : Fast 1100mV 85C Model Hold 'Clock:clock_v1|Time:time_v1|Counter:count_hours|cnt[1]'
+Slack : -1.987
+TNS   : -11.107
+
+Type  : Fast 1100mV 85C Model Hold 'Clock:clock_v1|Time:time_v1|Counter:count_seconds|cnt[1]'
+Slack : -1.778
+TNS   : -11.308
+
+Type  : Fast 1100mV 85C Model Hold 'Clock:clock_v1|Time:time_v1|Counter:count_minutes|cnt[1]'
+Slack : -1.774
+TNS   : -8.593
+
+Type  : Fast 1100mV 85C Model Hold 'CLOCK_50'
+Slack : -1.632
+TNS   : -11.621
+
+Type  : Fast 1100mV 85C Model Recovery 'Clock:clock_v1|Time:time_v1|Counter:count_minutes|cnt[1]'
+Slack : -4.823
+TNS   : -63.572
+
+Type  : Fast 1100mV 85C Model Recovery 'Clock:clock_v1|Time:time_v1|Counter:count_seconds|cnt[1]'
+Slack : -4.790
+TNS   : -63.573
+
+Type  : Fast 1100mV 85C Model Recovery 'Clock:clock_v1|Time:time_v1|Counter:count_hours|cnt[1]'
+Slack : -4.775
+TNS   : -63.039
+
+Type  : Fast 1100mV 85C Model Removal 'Clock:clock_v1|Time:time_v1|Counter:count_hours|cnt[1]'
+Slack : 0.339
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Removal 'Clock:clock_v1|Time:time_v1|Counter:count_seconds|cnt[1]'
+Slack : 0.348
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Removal 'Clock:clock_v1|Time:time_v1|Counter:count_minutes|cnt[1]'
+Slack : 0.365
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'Clock:clock_v1|Time:time_v1|Counter:count_minutes|cnt[1]'
+Slack : -1.078
+TNS   : -54.916
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'Clock:clock_v1|Time:time_v1|Counter:count_hours|cnt[1]'
+Slack : -0.896
+TNS   : -34.809
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'Clock:clock_v1|Time:time_v1|Counter:count_seconds|cnt[1]'
+Slack : -0.853
+TNS   : -36.595
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'CLOCK_50'
+Slack : -0.093
+TNS   : -30.724
+
+Type  : Fast 1100mV 0C Model Setup 'Clock:clock_v1|Time:time_v1|Counter:count_minutes|cnt[1]'
+Slack : -8.988
+TNS   : -99.826
+
+Type  : Fast 1100mV 0C Model Setup 'Clock:clock_v1|Time:time_v1|Counter:count_hours|cnt[1]'
+Slack : -7.481
+TNS   : -90.229
+
+Type  : Fast 1100mV 0C Model Setup 'Clock:clock_v1|Time:time_v1|Counter:count_seconds|cnt[1]'
+Slack : -7.124
+TNS   : -90.983
+
+Type  : Fast 1100mV 0C Model Setup 'CLOCK_50'
+Slack : -3.124
+TNS   : -419.303
+
+Type  : Fast 1100mV 0C Model Hold 'Clock:clock_v1|Time:time_v1|Counter:count_hours|cnt[1]'
+Slack : -1.901
+TNS   : -10.710
+
+Type  : Fast 1100mV 0C Model Hold 'Clock:clock_v1|Time:time_v1|Counter:count_seconds|cnt[1]'
+Slack : -1.710
+TNS   : -11.048
+
+Type  : Fast 1100mV 0C Model Hold 'Clock:clock_v1|Time:time_v1|Counter:count_minutes|cnt[1]'
+Slack : -1.695
+TNS   : -8.331
+
+Type  : Fast 1100mV 0C Model Hold 'CLOCK_50'
+Slack : -1.625
+TNS   : -12.526
+
+Type  : Fast 1100mV 0C Model Recovery 'Clock:clock_v1|Time:time_v1|Counter:count_minutes|cnt[1]'
+Slack : -4.330
+TNS   : -57.099
+
+Type  : Fast 1100mV 0C Model Recovery 'Clock:clock_v1|Time:time_v1|Counter:count_hours|cnt[1]'
+Slack : -4.322
+TNS   : -56.643
+
+Type  : Fast 1100mV 0C Model Recovery 'Clock:clock_v1|Time:time_v1|Counter:count_seconds|cnt[1]'
+Slack : -4.278
+TNS   : -57.263
+
+Type  : Fast 1100mV 0C Model Removal 'Clock:clock_v1|Time:time_v1|Counter:count_hours|cnt[1]'
+Slack : 0.290
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Removal 'Clock:clock_v1|Time:time_v1|Counter:count_seconds|cnt[1]'
+Slack : 0.312
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Removal 'Clock:clock_v1|Time:time_v1|Counter:count_minutes|cnt[1]'
+Slack : 0.324
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'Clock:clock_v1|Time:time_v1|Counter:count_minutes|cnt[1]'
+Slack : -0.985
+TNS   : -50.294
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'Clock:clock_v1|Time:time_v1|Counter:count_seconds|cnt[1]'
+Slack : -0.786
+TNS   : -33.706
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'Clock:clock_v1|Time:time_v1|Counter:count_hours|cnt[1]'
+Slack : -0.759
+TNS   : -31.374
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'CLOCK_50'
+Slack : -0.089
+TNS   : -30.468
+
+------------------------------------------------------------

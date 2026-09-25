@@ -1,0 +1,13 @@
+
+State Machine - |Final_watch|Clock:clock_v1|ButtonControl:Button_Control_v1|Edit:mode|state
+Name state.EDIT_HRS state.EDIT_MINS state.EDIT_SECS state.EDIT_NONE 
+state.EDIT_NONE 0 0 0 0 
+state.EDIT_SECS 0 0 1 1 
+state.EDIT_MINS 0 1 0 1 
+state.EDIT_HRS 1 0 0 1 
+
+State Machine - |Final_watch|mode_FSM:finite_SM|state_mode
+Name state_mode.CLOCK_MODE state_mode.COUNT_DOWN_TIMER_MODE state_mode.STOP_WATCH_MODE 
+state_mode.CLOCK_MODE 0 0 0 
+state_mode.STOP_WATCH_MODE 1 0 1 
+state_mode.COUNT_DOWN_TIMER_MODE 1 1 0 

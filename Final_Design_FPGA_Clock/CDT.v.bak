@@ -1,0 +1,97 @@
+module Count_down_timer(input clk, input [2:0] KEY, output [6:0] hours, output [6:0] seconds, minutes, output [0:0] LEDR);
+
+	localparam N = 50_000_000;
+	localparam BW = $clog2(N);
+	localparam PERIOD = 5_000_000;
+	localparam DELAY = 25_000_000;
+	localparam MAX_SEC = 59;
+	localparam MAX_HRS = 23;
+	
+	wire secs_change;
+	wire mins_change;
+	
+	wire [BW-1:0] tick;
+	
+	wire plus;
+	wire state; 
+	wire stop_state; 
+	
+	reg stop = 1;
+	reg next_stop;
+	
+	wire complete_state; 
+	reg complete_all_states = 0; 
+	reg next_complete_all_states = 0;
+	
+	initial begin 
+		complete_all_states = 0;
+		next_complete_all_states = 0;
+	end
+	
+	always @(posedge clk)
+		{stop, complete_all_states} <= {next_stop, next_complete_all_states};
+		
+	always @(*)
+	
+		if (complete_state) begin
+			next_stop = 1;
+			next_complete_all_states = 1;
+			end
+			
+		else if (stop_state) begin
+			next_complete_all_states = 0;
+			next_stop = 1;
+			end
+			
+		else if (state) begin
+			next_complete_all_states = complete_all_states;
+			next_stop = !stop;
+		end
+		
+		else begin
+			next_complete_all_states = complete_all_states;
+			next_stop = stop;
+		end
+	
+	
+	RisingEdge stop_1(.clk(clk), .in(!KEY[0]), .out(state));
+	RisingEdge stop_all_1(.clk(clk), .in(!KEY[2]), .out(stop_state));
+	
+	
+	//set fast advance for increase count down
+	FastAdvance #(.LONG(DELAY), .PERIOD(PERIOD)) plus_button_CD(.clk(clk), .in(!KEY[1]), .out(plus));
+	
+	
+	//set timer
+	Counter #(.MAX(N-1), .WIDTH(BW), .UP(0)) seperate_time 
+	(.clk(clk), .enable(!stop), .cnt(tick), .stop(stop_state), .plus(1'b0), .minus(1'b0));
+	
+	
+	//count seconds
+	Counter #(.MAX(MAX_SEC), .WIDTH(6), .UP(0)) count_seconds 
+	(.clk(clk), .enable(tick == (N-1)), .plus(plus && stop), .minus(1'b0), .cnt(seconds), .stop(stop_state));
+	
+	
+	//count minutes
+	Counter #(.MAX(MAX_SEC), .WIDTH(6), .UP(0)) count_minutes 
+	(.clk(clk), .enable(tick == (N-1) && seconds == 0), .plus(secs_change), .minus(1'b0), .cnt(minutes), .stop(stop_state));
+	
+	//count hours
+	Counter #(.MAX(MAX_HRS), .WIDTH(5), .UP(0)) count_hours 
+	(.clk(clk), .enable(tick == (N-1) && seconds == 0 && minutes == 0), .plus(mins_change), .minus(1'b0), .cnt(hours), .stop(stop_state));
+	
+	//check if we have moved from 59 to 0 for both seconds and minutes
+	check_values  #(.MAX(MAX_SEC), .WIDTH(6)) check1(.clk(clk), .in(seconds), .out(secs_change));
+	check_values  #(.MAX(MAX_SEC), .WIDTH(6)) check2(.clk(clk), .in(minutes), .out(mins_change));
+	
+	
+	//check if we have moved to 000 or not
+	check_done #(.PERIOD(N), .WIDTH(BW)) check3(.clk(clk), .hrs(hours), .mins(minutes), .secs(seconds), .out(complete_state));
+	
+	assign LEDR[0] = complete_all_states;
+	
+
+endmodule
+	
+	
+		
